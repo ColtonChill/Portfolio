@@ -1,0 +1,206 @@
+body{
+    font-family: Verdana,sans-serif;
+    font-style: normal;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.bg {
+    /* The image used */
+    background-image: linear-gradient(lightblue, #eee);  
+    /* Full height */
+    height: 600px;  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    color: #ddd;
+    text-shadow: 2px 2px 4px black;
+        text-align: center;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    margin-left: 20px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    margin-left: 20px;
+}
+p{
+    margin: 0px;
+}
+li{
+    padding: 0px;
+}
+.navigation_gen {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navls{
+    background-color:#333;
+    list-style-type: none;
+    float: left;
+}
+.weatherDiv{
+    display: block;
+    color: white;
+    background-color: rgba(50, 100, 200,1);
+    background-image: linear-gradient(#666,#444, #666);  
+    text-align: center;
+	padding: 3px 10px;
+    text-decoration: none;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+	letter-spacing: 1px;
+    margin: 10px auto;
+    width: 33%;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+}
+.forecastDiv{
+    display: block;
+    color: white;
+    background-color: rgba(100,100,100,1);
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+	padding: 3px 10px;
+    text-decoration: none;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+	letter-spacing: 1px;
+    margin: 7px auto;
+	cursor: pointer;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+}
+.forecastDiv:hover{
+    background-color: rgba(100,100,100,.8);
+}
+.forecastDiv1{
+    display: block;
+    color: white;
+    background-color: rgba(30,150,30,1);
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+	padding: 3px 10px;
+    text-decoration: none;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+	letter-spacing: 1px;
+    margin: 7px auto;
+	cursor: pointer;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+}
+.forecastDiv1:hover{
+    background-color: rgba(30,150,30,.8);
+}
+.forecastDiv2{
+    display: block;
+    color: white;
+    background-color: rgba(150,30,30,1);
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+	padding: 3px 10px;
+    text-decoration: none;
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+	letter-spacing: 1px;
+    margin: 7px auto;
+	cursor: pointer;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+}
+.forecastDiv2:hover{
+    background-color: rgba(150,30,30,.8);
+}
+
+.shadowed {
+	text-shadow: 1px 1px 2px black;
+	color:       white;
+}
+
+.stuff-box {
+	font-family: 'helvetica neue', helvetica, sans-serif;
+	color: white;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 3px 10px;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.instruction-box{
+	font-family: 'helvetica neue', helvetica, sans-serif;
+    color: white;
+    background-image: linear-gradient(rgb(83, 170, 241),rgb(65, 136, 194),rgb(83, 170, 241));
+	text-shadow: 2px 2px 2px black;
+	letter-spacing: 1px;
+    text-align: center;
+	text-transform: capitalize;
+	padding: 3px 10px;  
+	margin: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+    border-style: solid;
+}
+
+.red {
+	border-color: rgb(255,0,0);
+	background:   rgb(180,60,60);
+	box-shadow: 1px 1px 2px rgba(200,0,0,0.4);
+}
+
+.yellow {
+	border-color: rgb(255,255,0);
+	background:   rgb(180,180,60);
+	box-shadow: 1px 1px 2px rgba(200,200,0,0.4);
+}
+
+.blue {
+	border-color: rgb(0,0,255);
+	background:   rgb(60,60,180);
+	box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+}
+
+.green {
+	border-color: rgb(0,255,0);
+	background:   rgb(60,180,60);
+	box-shadow: 1px 1px 2px rgba(0,200,0,0.4);
+}
+
+.black {
+    border-color: rgb(0,0,0);
+    background:   rgb(75,75,75);
+    box-shadow: 1px 1px 2px rgba(200,200,0,0.4);
+}
+.goldrod {
+    border-color: rgb(75,75,75);
+    background:   darkgoldenrod;
+    box-shadow: 1px 1px 2px rgba(200,200,0,0.4);
+}
+
+.gold {
+	text-shadow: 2px 2px 4px black;
+	color: #ffe000;
+}

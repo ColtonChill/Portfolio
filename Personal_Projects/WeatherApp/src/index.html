@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>All of your Title are belong to Us</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body class=bg>
+    <h1>Weather Forecast Voting App</h1>
+    <div id="weatherApp">
+        <div v-if="loaded === false"><img src="wavy.gif"></div>
+        <div v-else>
+            <div class="instruction-box">
+                <p>Welcome to this meteorological voting app!</p>
+                <p>Cast Your Vote!<br>
+                    Click on future forecast to toggle between:<br>
+                    Undecided {{voteCount.default}}<br>
+                    Likely {{voteCount.likely}}<br>
+                    Unlikely {{voteCount.unlikely}}</p>
+            </div>
+            <div class="weatherDiv">
+                <p>Estimated location: {{position.city}},{{position.state}},{{position.country}}</p>
+                <p v-for=" e in weather"> {{ e }}</p>
+            </div>
+            <h3>Forecasted Weather is:</h3>
+            <div>
+                <div v-for="w in weatherSnapshotData"
+                    v-bind:class="{'forecastDiv': w.likelyhood !== 'likely' || 'unlikely', 'forecastDiv1':w.likelyhood == 'likely', 'forecastDiv2':(w.likelyhood == 'unlikely')}"
+                    v-on:click="return function() { w.likelyhood == 'likely' ? w.likelyhood = 'unlikely' : w.likelyhood = 'likely';cycle(w.likelyhood); }()">
+                    <p v-for="e in w">{{e}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" script.js"></script>
+</body>
+
+</html>
